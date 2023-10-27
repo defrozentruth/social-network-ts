@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "~server-src/*": ["./server/*"],
+      "~client-src/*": ["./client/*"],
+      "build-gulp/server/*": ["~server-src/*"],
+      "build-gulp/client/*": ["~client-src/*"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "outDir": "./build",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true
+  },
+  "include": ["server/**/*", "client/**/*"],
+  "exclude": ["node_modules", "build", "client"],
+  "tsc-alias": {
+    "resolveFullPaths": true
+  }
+}

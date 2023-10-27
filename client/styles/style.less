@@ -1,0 +1,140 @@
+/* style.less */
+
+/* Цвета */
+@primary-color: #b33fe5;
+@secondary-color: #fff;
+@text-color: #333;
+@info-panel-background: #f0f0f0;
+@border-color: #ddd;
+
+/* Шрифты */
+@font-family: Arial, sans-serif;
+@font-size: 14px;
+@font-size-title: 24px;
+
+/* Основной фон страниц */
+.pages {
+  font-family: @font-family;
+  background-color: @secondary-color;
+  color: @text-color;
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовки страниц */
+.title {
+  font-size: @font-size-title;
+  margin: 20px;
+}
+
+/* Панели */
+.div-panel {
+  background-color: @secondary-color;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid @border-color;
+}
+
+/* Информационные панели */
+.info-panel {
+  background-color: @info-panel-background;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid @border-color;
+}
+
+/* Ссылки на главную страницу */
+.return {
+  margin-bottom: 10px;
+}
+
+/* Список пользователей */
+.tr-all-users {
+  border: 1px solid @border-color;
+  background-color: @secondary-color;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* Иконки */
+.fa {
+  font-size: 20px;
+  margin-right: 5px;
+  color: @primary-color;
+}
+
+/* Кнопки */
+.btn {
+  background-color: @primary-color;
+  color: @secondary-color;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: @font-size;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Форма редактирования пользователя */
+#edit-user-form {
+  padding: 10px;
+  background-color: @secondary-color;
+  border: 1px solid @border-color;
+  margin: 10px;
+}
+
+/* Элементы формы */
+.form-group {
+  margin: 10px 0;
+}
+
+/* Таблицы */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Заголовки таблицы */
+th {
+  background-color: @primary-color;
+  color: @secondary-color;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Ячейки таблицы */
+td {
+  border: 1px solid @border-color;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Ссылки */
+a {
+  text-decoration: none;
+  color: @primary-color;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; // Делаем блок по центру вертикально
+
+  .social-info {
+    background-color: @primary-color; // Фиолетовый цвет
+    padding: 20px;
+    border-radius: 15px; // Скругляем края
+
+    h1 {
+      color: #fff;
+    }
+
+    a.entry {
+      color: blue;
+    }
+  }
+}

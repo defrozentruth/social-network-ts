@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "johndoe@gmail.com",
+    "date": "1994-12-23",
+    "status": "blocked",
+    "role": "user",
+    "friends": [
+      3,
+      5,
+      6,
+      10,
+      11
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Alice Smith",
+    "email": "alicesmith@gmail.com",
+    "date": "1990-05-15",
+    "status": "active",
+    "role": "user",
+    "friends": [
+      1,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "email": "bobjohnson@gmail.com",
+    "date": "1985-07-30",
+    "status": "active",
+    "role": "user",
+    "friends": [
+      1,
+      4,
+      2
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Eve Wilson",
+    "email": "evewilson@gmail.com",
+    "date": "1992-03-10",
+    "status": "active",
+    "role": "user",
+    "friends": [
+      2,
+      3,
+      6
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Charlie Brown",
+    "email": "charliebrown@gmail.com",
+    "date": "1997-09-25",
+    "status": "active",
+    "role": "admin",
+    "friends": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Grace Davis",
+    "email": "gracedavis@gmail.com",
+    "date": "1989-11-18",
+    "status": "active",
+    "role": "user",
+    "friends": [
+      1,
+      4,
+      7
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Michael Clark",
+    "email": "michaelclark@gmail.com",
+    "date": "1998-04-05",
+    "status": "active",
+    "role": "user",
+    "friends": [
+      6,
+      8,
+      9
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Sophia Lee",
+    "email": "sophialee@gmail.com",
+    "date": "1993-06-14",
+    "status": "active",
+    "role": "user",
+    "friends": [
+      7,
+      9
+    ]
+  },
+  {
+    "id": 9,
+    "name": "David Smith",
+    "email": "davidsmith@gmail.com",
+    "date": "1987-01-28",
+    "status": "active",
+    "role": "user",
+    "friends": [
+      7,
+      8
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Olivia Moore",
+    "email": "oliviamoore@gmail.com",
+    "date": "1996-08-07",
+    "status": "active",
+    "role": "admin",
+    "friends": [
+      1
+    ]
+  }
+]
