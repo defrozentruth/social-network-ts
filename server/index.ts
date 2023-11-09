@@ -11,6 +11,9 @@ import morgan from 'morgan';
 import {__front_src_dir, __project_dir, __public_dir} from "./config.js";
 import backend from "./loaders/backend.js";
 import frontend from "./loaders/frontend.js";
+import cors from 'cors'
+import mongoose from 'mongoose'
+import {initIo} from "./socket.js";
 
 const server = express();
 
@@ -28,6 +31,15 @@ server.use(express.json());
 server.use(express.urlencoded({extended: false}));
 server.use(cookieParser());
 
+const options = {
+    'credentials': true,
+    'origin': true,
+    'methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    'allowedHeaders': 'Authorization,X-Requested-With,X-HTTPMethod-Override,Content-Type,Cache-Control,Accept',
+}
+
+server.use(cors(options))
+
 backend(server);
 frontend(server);
 
@@ -41,6 +53,13 @@ const credentials = {
 
 const httpServer = http.createServer(server);
 const httpsServer = https.createServer(credentials, server);
+
+mongoose.connect(
+    'mongodb://127.0.0.1:27017/lab3').then(
+    ()=> console.log(`Connected to database`)
+)
+
+initIo(httpServer)
 
 httpServer.listen(8080, () => {
     console.log('Server started at http://localhost:8080/');
