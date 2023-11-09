@@ -15,7 +15,7 @@ function tsCompileServer() {
         .pipe(sourcemap.init())
         .pipe(tsProject()).js
         .pipe(tscAlias({ configPath: 'tsconfig.json'}))
-        .pipe(gulpUglify())
+        // .pipe(gulpUglify())
         .pipe(sourcemap.write('.'))
         .pipe(gulp.dest('build/server'));
 }

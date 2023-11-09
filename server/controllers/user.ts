@@ -1,6 +1,7 @@
 import UserRepository from "../repository/user.js";
 import e from "express";
 import {User} from "../models/user.js";
+import {getIo} from "../socket.js";
 
 export default class UserController {
 
@@ -64,6 +65,30 @@ export default class UserController {
             res.status(200).send(JSON.stringify(friends));
         } catch (error:any) {
             res.status(400).json({ error: error.message });
+        }
+    };
+
+    public addFriend = async (req: e.Request, res: e.Response) => {
+        try{
+            const id = Number(req.params["id"])
+            const friendId = Number(req.params["friendId"])
+            const result = await this.userRepository.addFriend(id, friendId)
+            res.status(200).json(result)
+            getIo().emit('friend', JSON.stringify(result))
+        }catch (e: any) {
+            res.status(400).json({error: e.message})
+        }
+    }
+
+    public deleteFriend = async (req: e.Request, res: e.Response) => {
+        try {
+            const id = Number(req.params["id"]);
+            const friendId = Number(req.params["friendId"])
+            const success = await this.userRepository.deleteFriend(id, friendId);
+            res.status(200).json(success)
+            getIo().emit('friend', JSON.stringify(success))
+        }catch (e: any) {
+            res.status(400).json({error: e.message})
         }
     };
 }

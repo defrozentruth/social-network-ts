@@ -1,4 +1,5 @@
 import validator from "validator"
+import {UserDocument} from "~server-src/adapters/mongo/schema/user.js";
 export {User, STATUS, ROLE}
 
 const STATUS = [
@@ -25,12 +26,16 @@ class User{
         return Object.assign(new User(), obj)
     }
 
-    public setStatus = (status: string) => {
-        this.status = status;
-    }
-
-    public setRole = (role: string) => {
-        this.role = role;
+    static userDocumentToUser(userDoc: UserDocument): User {
+        return new User(
+            userDoc.id,
+            userDoc.name,
+            userDoc.email,
+            userDoc.date,
+            userDoc.status,
+            userDoc.role,
+            userDoc.friends
+        );
     }
 
     public isValid = () => {

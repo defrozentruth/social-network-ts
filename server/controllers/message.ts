@@ -1,5 +1,7 @@
 import MessageRepository from "../repository/message.js";
 import e from "express";
+import {getIo} from "../socket.js";
+import Message from "../models/message.js";
 
 export default class MessageController {
     constructor(private messageRepo: MessageRepository) {}
@@ -30,6 +32,18 @@ export default class MessageController {
             res.status(200).json(chats);
         } catch (error: any) {
             res.status(500).json({ error: error.message });
+        }
+    }
+
+    public createMessage = async (req: e.Request, res: e.Response) => {
+        try{
+            const message = Message.fromObject(req.body)
+            message.sender_id = parseInt(req.params["id"])
+            message.receiver_id = parseInt(req.params["friendId"])
+            const createdMessage = await this.messageRepo.create(message)
+            getIo().emit('message', JSON.stringify(createdMessage))
+        }catch (e: any) {
+            res.status(400).json({error: e.message})
         }
     }
 }

@@ -6,7 +6,6 @@ $(document).ready(function () {
         const lastPart = parts[parts.length - 1];
         const number = parseInt(lastPart, 10);
         event.preventDefault();
-        event.preventDefault();
         let formData = $(this).serialize();
         await fetch(`/api/user/${number}`, {
             method: 'PUT',

@@ -3,6 +3,7 @@ const {resolve} = require("path");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+
 module.exports = [
     {
         entry: {
@@ -29,11 +30,11 @@ module.exports = [
                 patterns: [
                     {
                         from: 'data', // Путь к папке со статическими файлами
-                        to: '../../data', // Путь, куда копировать файлы (в директорию build)
+                        to: '../server/data', // Путь, куда копировать файлы (в директорию build)
                     },
                     {
                         from: 'ssl_keys',
-                        to: '../../ssl_keys',
+                        to: '../server/ssl_keys',
                     },
                     {
                         from: './client/views',

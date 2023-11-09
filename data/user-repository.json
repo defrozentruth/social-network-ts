@@ -5,7 +5,7 @@
     "email": "johndoe@gmail.com",
     "date": "1994-12-24",
     "status": "active",
-    "role": "admin",
+    "role": "user",
     "friends": [
       3,
       5,

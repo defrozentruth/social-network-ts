@@ -19,7 +19,7 @@ html(lang="ru")
                     input.form-control(type="text", id="editUserName", name="name", value=user.name, required)
                 .form-group
                     label(for="editUserBirth") Дата рождения:
-                    input.form-control(type="date", id="editUserBirth", name="date", value=user.date, required)
+                    input.form-control(type="date", id="editUserBirth", name="date", value=user.date.slice(0, 10), required)
                 .form-group
                     label(for="editUserEmail") Почта:
                     input.form-control(type="email", id="editUserEmail", name="email", value=user.email, required)
