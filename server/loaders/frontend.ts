@@ -1,5 +1,6 @@
 import express, {Express, Request, Response} from 'express';
-import repositoryPool from "../repository/repository-pool.js";
+import repositoryPool from "../repository/repository-pool";
+import * as Sentry from "@sentry/node"
 
 
 export default (server: Express) => {
@@ -19,7 +20,7 @@ export default (server: Express) => {
                 res.status(500).send('Произошла ошибка при получении данных');
             }
         } catch (error: any) {
-            console.error('Произошла ошибка:', error.message);
+            Sentry.captureException(error);
             res.status(500).send('Произошла ошибка');
         }
     });
@@ -50,7 +51,7 @@ export default (server: Express) => {
 
             res.render('usersFriends', { users: renderData.users, user: renderData.currentUser });
         } catch (error: any) {
-            console.error('Произошла ошибка:', error.message);
+            Sentry.captureException(error);
             res.status(500).send('Произошла ошибка');
         }
     });
@@ -65,7 +66,7 @@ export default (server: Express) => {
             }
             res.render('usersChats', {usersChats: await repositoryPool.messageRepo.getUserChats(currentUserId), user: responseData.currentUser});
         } catch (error: any) {
-            console.error('Произошла ошибка:', error.message);
+            Sentry.captureException(error);
             res.status(500).send('Произошла ошибка');
         }
     });
@@ -80,7 +81,7 @@ export default (server: Express) => {
             }
             res.render('usersNews', {usersNews: await repositoryPool.newsRepo.getNews(responseData.currentUser["friends"]), user: responseData.currentUser});
         }catch (error: any) {
-            console.error('Произошла ошибка:', error.message);
+            Sentry.captureException(error);
             res.status(500).send('Произошла ошибка');
         }
     });
@@ -95,7 +96,7 @@ export default (server: Express) => {
             }
             res.render('editUser', {user: responseData.currentUser});
         }catch (error: any) {
-            console.error('Произошла ошибка:', error.message);
+            Sentry.captureException(error);
             res.status(500).send('Произошла ошибка');
         }
     })

@@ -1,5 +1,5 @@
 import e from "express";
-import {UserDocument, UserModel} from "../adapters/mongo/schema/user.js";
+import {UserDocument, UserModel} from "../adapters/mongo/schema/user";
 
 export default async (req: e.Request, res: e.Response, next: e.NextFunction) => {
     const decodedTokenData = req.token;

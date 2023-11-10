@@ -1,4 +1,4 @@
-import {AuthDocument} from "../adapters/mongo/schema/auth.js";
+import {AuthDocument} from "../adapters/mongo/schema/auth";
 export default class AuthData{
     constructor(
        public id: number,

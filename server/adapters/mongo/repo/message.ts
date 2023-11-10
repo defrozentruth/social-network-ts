@@ -1,6 +1,6 @@
-import MessageRepository from "../../../repository/message.js";
-import Message from "../../../models/message.js";
-import {MessageModel} from "../../../adapters/mongo/schema/message.js";
+import MessageRepository from "../../../repository/message";
+import Message from "../../../models/message";
+import {MessageModel} from "../../../adapters/mongo/schema/message";
 
 export default class MongoMessageRepository implements MessageRepository{
     async getMessagesInChat(user_id: number, friend_id: number): Promise<Message[]> {

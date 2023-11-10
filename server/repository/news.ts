@@ -1,4 +1,4 @@
-import News from "../models/news.js";
+import News from "../models/news";
 
 export default interface NewsRepository {
     getAllNews(): Promise<News[]>;

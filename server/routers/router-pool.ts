@@ -1,9 +1,10 @@
-import UserRouter from "./user.js";
-import NewsRouter from "./news.js";
-import MessageRouter from "./message.js";
-import controllerPool from "../controllers/controller-pool.js";
-import FriendRouter from "./friend.js";
-import AuthRouter from "./auth.js";
+import UserRouter from "./user";
+import NewsRouter from "./news";
+import MessageRouter from "./message";
+import controllerPool from "../controllers/controller-pool";
+import FriendRouter from "./friend";
+import AuthRouter from "./auth";
+import ImageRouter from "./image";
 
 export default {
     userRouter: new UserRouter(controllerPool.userController).getRouter(),
@@ -11,4 +12,5 @@ export default {
     messageRouter: new MessageRouter(controllerPool.messageController).getRouter(),
     friendRouter: new FriendRouter(controllerPool.userController).getRouter(),
     authRouter: new AuthRouter(controllerPool.authController).getRouter(),
+    imageRouter: new ImageRouter(controllerPool.imageController).getRouter(),
 }

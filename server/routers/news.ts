@@ -1,5 +1,5 @@
 import e from "express";
-import NewsController from "../controllers/news.js";
+import NewsController from "../controllers/news";
 
 export default class NewsRouter{
     constructor(private readonly controller: NewsController) {}

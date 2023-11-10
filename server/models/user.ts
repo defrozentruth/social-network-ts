@@ -1,5 +1,5 @@
 import validator from "validator"
-import {UserDocument} from "~server-src/adapters/mongo/schema/user.js";
+import {UserDocument} from "~server-src/adapters/mongo/schema/user";
 export {User, STATUS, ROLE}
 
 const STATUS = [

@@ -4,7 +4,7 @@ declare global{
     namespace Express{
         interface Request{
             token: any,
-            currentUser: UserDocument
+            currentUser: UserDocument,
         }
     }
 }

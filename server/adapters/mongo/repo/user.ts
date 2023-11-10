@@ -1,6 +1,6 @@
-import {UserModel} from "../../../adapters/mongo/schema/user.js";
-import {User} from "../../../models/user.js";
-import UserRepository from "../../../repository/user.js";
+import {UserModel} from "../../../adapters/mongo/schema/user";
+import {User} from "../../../models/user";
+import UserRepository from "../../../repository/user";
 
 export default class MongoUserRepository implements UserRepository{
 

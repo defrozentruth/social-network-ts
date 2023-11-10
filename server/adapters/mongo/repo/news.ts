@@ -1,6 +1,6 @@
-import NewsRepository from "../../../repository/news.js";
-import News from "../../../models/news.js";
-import {NewsModel} from "../../../adapters/mongo/schema/news.js";
+import NewsRepository from "../../../repository/news";
+import News from "../../../models/news";
+import {NewsModel} from "../../../adapters/mongo/schema/news";
 
 export default class MongoNewsRepository implements NewsRepository{
     async getAllNews(): Promise<News[]> {

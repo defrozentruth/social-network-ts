@@ -1,6 +1,6 @@
-import AuthRepository from "../../../repository/auth.js";
-import AuthData from "../../../models/auth.js";
-import {AuthModel} from "../schema/auth.js";
+import AuthRepository from "../../../repository/auth";
+import AuthData from "../../../models/auth";
+import {AuthModel} from "../schema/auth";
 
 export default class MongoAuthRepository implements AuthRepository{
     public async create(authData: AuthData){

@@ -1,4 +1,4 @@
-import {NewsDocument} from "~server-src/adapters/mongo/schema/news.js";
+import {NewsDocument} from "~server-src/adapters/mongo/schema/news";
 
 export default class News{
     constructor(

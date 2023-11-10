@@ -1,4 +1,4 @@
-import Message from "../models/message.js";
+import Message from "../models/message";
 
 export default interface MessageRepository {
     getMessagesInChat(user_id: number, friend_id: number): Promise<Message[]>;

@@ -8,12 +8,13 @@ import express from 'express';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
-import {__front_src_dir, __project_dir, __public_dir} from "./config.js";
-import backend from "./loaders/backend.js";
-import frontend from "./loaders/frontend.js";
+import {__front_src_dir, __project_dir, __public_dir} from "./config";
+import backend from "./loaders/backend";
+import frontend from "./loaders/frontend";
 import cors from 'cors'
 import mongoose from 'mongoose'
-import {initIo} from "./socket.js";
+import {initIo} from "./socket";
+import * as Sentry from "@sentry/node";
 
 const server = express();
 
@@ -31,6 +32,10 @@ server.use(express.json());
 server.use(express.urlencoded({extended: false}));
 server.use(cookieParser());
 
+Sentry.init({
+    dsn: 'https://a5cb82cb0325719bfe0c1f4bc61fc785@o4506198583738368.ingest.sentry.io/4506198587408384',
+})
+
 const options = {
     'credentials': true,
     'origin': true,
@@ -40,8 +45,10 @@ const options = {
 
 server.use(cors(options))
 
+server.use(Sentry.Handlers.requestHandler());
 backend(server);
 frontend(server);
+server.use(Sentry.Handlers.errorHandler());
 
 const privateKey = fs.readFileSync(path.join(__project_dir, 'ssl_keys/example.key'), 'utf-8');
 const certificate = fs.readFileSync(path.join(__project_dir, 'ssl_keys/example.crt'), 'utf8');
@@ -67,3 +74,5 @@ httpServer.listen(8080, () => {
 httpsServer.listen(8443, () => {
     console.log('Server started at https://localhost:8443/');
 });
+
+export default server;

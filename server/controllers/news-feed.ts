@@ -1,7 +1,7 @@
-import UserRepository from "../repository/user.js";
-import {Error} from "../types/error.js";
-import NewsRepository from "../repository/news.js";
-import News from "../models/news.js";
+import UserRepository from "../repository/user";
+import {Error} from "../types/error";
+import NewsRepository from "../repository/news";
+import News from "../models/news";
 
 export default class NewsFeedController {
     constructor(private newsRepo: NewsRepository, private userRepo: UserRepository) {}

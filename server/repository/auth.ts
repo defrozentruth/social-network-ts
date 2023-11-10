@@ -1,4 +1,4 @@
-import AuthData from "../models/auth.js";
+import AuthData from "../models/auth";
 
 export default interface AuthRepository{
     create(authData: AuthData): Promise<Partial<AuthData>>

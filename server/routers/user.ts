@@ -1,8 +1,5 @@
 import e from "express";
-import UserController from "../controllers/user.js";
-import isAuth from "../middleware/IsAuth.js";
-import attachCurrentUser from "../middleware/attachCurrentUser.js";
-import requiredRole from "../middleware/requiredRole.js";
+import UserController from "../controllers/user";
 
 export default class UserRouter{
     constructor(private readonly controller: UserController) {}

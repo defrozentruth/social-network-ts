@@ -1,5 +1,5 @@
 import e from "express";
-import MessageController from "../controllers/message.js";
+import MessageController from "../controllers/message";
 
 export default class MessageRouter{
     constructor(private readonly controller: MessageController) {}

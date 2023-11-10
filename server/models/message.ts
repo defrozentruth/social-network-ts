@@ -1,4 +1,4 @@
-import {MessageDocument} from "~server-src/adapters/mongo/schema/message.js";
+import {MessageDocument} from "~server-src/adapters/mongo/schema/message";
 
 export default class Message{
     constructor(

@@ -1,8 +1,9 @@
-import NewsRepository from "../repository/news.js";
+import NewsRepository from "../repository/news";
 import e from "express";
-import repositoryPool from "../repository/repository-pool.js";
-import News from "../models/news.js";
-import {getIo} from "../socket.js";
+import repositoryPool from "../repository/repository-pool";
+import News from "../models/news";
+import {getIo} from "../socket";
+import * as Sentry from "@sentry/node";
 
 export default class NewsController {
 
@@ -13,6 +14,7 @@ export default class NewsController {
             const news = await this.newsRepository.getAllNews();
             res.status(200).send(JSON.stringify(news));
         } catch (error:any) {
+            Sentry.captureException(error);
             res.status(404).json({ error: error.message });
         }
     };
@@ -23,6 +25,7 @@ export default class NewsController {
             const news = await this.newsRepository.getNewsByAuthorId(id);
             res.status(200).send(JSON.stringify(news));
         } catch (error: any) {
+            Sentry.captureException(error);
             res.status(404).json({ error: error.message });
         }
     };
@@ -33,6 +36,7 @@ export default class NewsController {
             const news = await this.newsRepository.getNews(((await repositoryPool.userRepo.getById(id)).friends)!)
             res.status(200).send(JSON.stringify(news))
         }catch (error: any){
+            Sentry.captureException(error);
             res.status(404).json({error: error.message})
         }
     }
@@ -44,6 +48,7 @@ export default class NewsController {
             const createdNews = await this.newsRepository.create(news)
             getIo().emit('feed', JSON.stringify(createdNews))
         }catch (e: any) {
+            Sentry.captureException(e);
             res.status(400).json({error: e.message})
         }
     }
@@ -54,6 +59,7 @@ export default class NewsController {
             const success = await this.newsRepository.delete(id);
             res.json({ success });
         } catch (error: any) {
+            Sentry.captureException(error);
             res.status(400).json({ error: error.message });
         }
     };
