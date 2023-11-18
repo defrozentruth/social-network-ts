@@ -2,12 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573b45e9-8e8c-4c0e-b497-92181d72e3cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/social-network-ts.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/views/editUser.pug" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/views/editUser.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/views/startPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/views/startPage.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/views/usersChats.pug" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/views/usersChats.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/views/usersFriends.pug" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/views/usersFriends.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/views/usersNews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/views/usersNews.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/views/usersPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/views/usersPage.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/client/views/usersTable.pug" beforeDir="false" afterPath="$PROJECT_DIR$/build/client/views/usersTable.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/server/data/message-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/server/data/message-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/server/data/news-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/server/data/news-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/server/data/user-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/server/data/user-repository.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/styles/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/editUser.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/editUser.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/views/startPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/startPage.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersChats.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersChats.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersFriends.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersFriends.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersNews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersNews.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/views/usersPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersPage.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/message-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/message-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersTable.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersTable.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/news-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/news-repository.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/user-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/user-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/message-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/message-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/news-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/news-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/user-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/data/user-repository.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +49,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/123/Documents/GitHub/social-network-ts&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\123\\Documents\\GitHub\\social-network-ts\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/123/Documents/GitHub/social-network-ts",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\123\\Documents\\GitHub\\social-network-ts\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\123\Documents\GitHub\social-network-ts\server\data" />
@@ -58,7 +82,8 @@
       <workItem from="1699874880848" duration="7102000" />
       <workItem from="1700300246701" duration="24000" />
       <workItem from="1700300961831" duration="222000" />
-      <workItem from="1700301206032" duration="2007000" />
+      <workItem from="1700301206032" duration="2380000" />
+      <workItem from="1700303676800" duration="308000" />
     </task>
     <servers />
   </component>
