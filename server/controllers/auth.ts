@@ -41,12 +41,12 @@ export class AuthController{
         try{
             const {email, password} = req.body
             const userRecord = await this.authRepo.getUserByEmail(email);
-            const correctPassword = await argon2.verify(userRecord.password, password)
+            const correctPassword = await argon2.verify(userRecord.password!, password)
             if(!correctPassword){
                 throw new Error('Incorrect password')
             }
             res.status(200).send(JSON.stringify({
-                user: await this.userRepo.getById(userRecord.id),
+                user: await this.userRepo.getById(userRecord.id!),
                 token: this.generateJWT(userRecord)
             }))
         }catch (error: any){

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="573b45e9-8e8c-4c0e-b497-92181d72e3cb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/auth-repository.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/photo-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/styles/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/style.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/editUser.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/editUser.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/startPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/startPage.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersChats.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersChats.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersFriends.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersFriends.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersNews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersNews.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersPage.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/views/usersTable.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersTable.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/message-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/message-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/news-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/news-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/user-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/user-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adapters/mongo/repo/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adapters/mongo/schema/auth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/message-repository.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/news-repository.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/data/user-repository.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/middleware/attachCurrentUser.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/middleware/attachCurrentUser.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/repository/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/repository/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/repository/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/repository/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/types/express.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/types/express.d.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Y4jbMezxsl4vvXFzuQyTAuYZRa" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/123/Documents/GitHub/social-network-angular",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\123\\Documents\\GitHub\\social-network-ts\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\123\Documents\GitHub\social-network-ts\server\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="build/server/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="573b45e9-8e8c-4c0e-b497-92181d72e3cb" name="Changes" comment="" />
+      <created>1699791815786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699791815786</updated>
+      <workItem from="1699791816994" duration="9832000" />
+      <workItem from="1699874880848" duration="7102000" />
+      <workItem from="1700300246701" duration="24000" />
+      <workItem from="1700300961831" duration="222000" />
+      <workItem from="1700301206032" duration="2380000" />
+      <workItem from="1700303676800" duration="6607000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

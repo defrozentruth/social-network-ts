@@ -123,4 +123,10 @@ export default class UserRepository {
         fs.writeFileSync(UserRepository.SAVE_FILENAME, data);
         console.log(`[UserRepository] Data saved to ${UserRepository.SAVE_FILENAME}`);
     }
+
+    async getCountUsers(): Promise<number>{
+        const buf = fs.readFileSync(UserRepository.SAVE_FILENAME)
+        const users = JSON.parse(buf.toString());
+        return users.length;
+    }
 }
