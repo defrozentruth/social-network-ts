@@ -33,7 +33,7 @@ server.use(express.urlencoded({extended: false}));
 server.use(cookieParser());
 
 Sentry.init({
-    dsn: 'https://a5cb82cb0325719bfe0c1f4bc61fc785@o4506198583738368.ingest.sentry.io/4506198587408384',
+    dsn: 'https://1ef2fe9affc4e612142273d028b71962@o4506246486753280.ingest.sentry.io/4506246513098752',
 })
 
 const options = {

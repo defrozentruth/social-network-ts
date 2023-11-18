@@ -1,0 +1,2 @@
+"use strict";$(document).ready(function(){$(document).on("submit","#edit-user-form",async function(e){var t=window.location.href.split("/"),t=t[t.length-1],t=parseInt(t,10),e=(e.preventDefault(),$(this).serialize());await fetch("/api/user/"+t,{method:"PUT",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:e}).then(e=>{e.ok?location.href="/user":alert("Произошла ошибка при обновлении данных пользователя.")}).catch(e=>{console.error("Ошибка:",e),alert("Произошла ошибка при обновлении данных пользователя.")})})});
+//# sourceMappingURL=index.js.map

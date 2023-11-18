@@ -1,0 +1,1 @@
+{"version":3,"file":"image.js","sourceRoot":"","sources":["../../../../../server/adapters/mongo/schema/image.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,EAAE,EAAW,MAAM,EAAC,MAAM,UAAU,CAAC;AAEpD,MAAM,WAAW,GAAG,IAAI,MAAM,CAAC;IAC3B,OAAO,EAAE,MAAM;IACf,SAAS,EAAE,MAAM;CACpB,CAAC,CAAC;AAOH,MAAM,CAAC,MAAM,UAAU,GAAG,QAAQ,CAAC,KAAK,CAAgB,QAAQ,EAAE,WAAW,CAAC,CAAC"}

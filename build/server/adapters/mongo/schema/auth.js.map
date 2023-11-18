@@ -1,0 +1,1 @@
+{"version":3,"file":"auth.js","sourceRoot":"","sources":["../../../../../server/adapters/mongo/schema/auth.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,EAAE,EAAY,MAAM,EAAE,MAAM,UAAU,CAAC;AAEtD,MAAM,UAAU,GAAG,IAAI,MAAM,CAAC;IAC1B,EAAE,EAAE,MAAM;IACV,KAAK,EAAE,MAAM;IACb,QAAQ,EAAE,MAAM;CACnB,CAAC,CAAC;AAQH,MAAM,CAAC,MAAM,SAAS,GAAG,QAAQ,CAAC,KAAK,CAAe,gBAAgB,EAAE,UAAU,CAAC,CAAC"}
