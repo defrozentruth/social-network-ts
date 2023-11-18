@@ -1,4 +1,9 @@
 import {User} from "../models/user";
+import path from "path";
+import {__data_dir} from "../config.js";
+import {User} from "../models/user.js";
+import {Error} from "../types/error.js"
+import fs from "fs";
 
 export default interface UserRepository {
     getById(id: number): Promise<User>;

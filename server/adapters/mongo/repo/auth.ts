@@ -1,6 +1,8 @@
 import AuthRepository from "../../../repository/auth";
 import AuthData from "../../../models/auth";
 import {AuthModel} from "../schema/auth";
+import path from "path";
+import {__data_dir} from "../config.js";
 
 export default class MongoAuthRepository implements AuthRepository{
     public async create(authData: AuthData){
@@ -10,6 +12,9 @@ export default class MongoAuthRepository implements AuthRepository{
             id: authDoc.id,
             email: authDoc.email
         } as Partial<AuthData>
+
+
+
     }
 
     public async getUserByEmail(email:string){

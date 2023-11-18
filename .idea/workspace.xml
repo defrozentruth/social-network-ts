@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573b45e9-8e8c-4c0e-b497-92181d72e3cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/message-repository.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/news-repository.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/user-repository.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/styles/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/styles/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/editUser.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/editUser.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/startPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/startPage.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/usersChats.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersChats.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/usersFriends.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersFriends.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/usersNews.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersNews.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/usersPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersPage.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/usersTable.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/usersTable.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/auth-repository.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/photo-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/adapters/mongo/repo/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/adapters/mongo/repo/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/repository/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/repository/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,17 +28,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/123/Documents/GitHub/social-network-ts",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\123\\Documents\\GitHub\\social-network-ts\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/123/Documents/GitHub/social-network-ts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\123\\Documents\\GitHub\\social-network-ts\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\123\Documents\GitHub\social-network-ts\server\data" />
@@ -64,7 +62,7 @@
       <workItem from="1700300246701" duration="24000" />
       <workItem from="1700300961831" duration="222000" />
       <workItem from="1700301206032" duration="2380000" />
-      <workItem from="1700303676800" duration="1435000" />
+      <workItem from="1700303676800" duration="6607000" />
     </task>
     <servers />
   </component>
@@ -81,52 +79,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.ts</url>
-          <line>63</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.ts</url>
-          <line>64</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.ts</url>
-          <line>66</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.ts</url>
-          <line>65</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.ts</url>
-          <line>34</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.ts</url>
-          <line>36</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server/index.ts</url>
-          <line>35</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
