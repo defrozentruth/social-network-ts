@@ -1,0 +1,2 @@
+import path from"path";import{fileURLToPath}from"url";const __project_dir=path.join(path.dirname(fileURLToPath(import.meta.url)),"../../"),__raw_src_dir=path.join(__project_dir,"build"),__front_src_dir=path.join(__project_dir,"build/client"),__public_dir=path.join(__project_dir,"build/client"),__data_dir=path.join(__project_dir,"data"),__url="http://localhost:8080";export{__project_dir,__raw_src_dir,__front_src_dir,__public_dir,__data_dir,__url};
+//# sourceMappingURL=config.js.map

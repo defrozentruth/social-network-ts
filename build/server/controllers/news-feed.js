@@ -1,0 +1,2 @@
+import{Error}from"../types/error.js";export default class NewsFeedController{newsRepo;userRepo;constructor(e,r){this.newsRepo=e,this.userRepo=r}getNewsFeed=async e=>{var r=await this.userRepo.getById(e),r=(console.log(r),r.friends);if(!r)throw new Error(404,`User with id ${e} friend not found`);var t=[];for(const o of r)t.push(...await this.newsRepo.getNewsByAuthorId(o));return t.sort((e,r)=>{e=e.date?new Date(e.date):null,r=r.date?new Date(r.date):null;return e&&r?e.getTime()-r.getTime():0})}}
+//# sourceMappingURL=news-feed.js.map

@@ -1,0 +1,2 @@
+import routersPool from"../routers/router-pool.js";export default e=>{e.use("/api/user",routersPool.userRouter),e.use("/api/news",routersPool.newsRouter),e.use("/api/message",routersPool.messageRouter),e.use("/api/friend",routersPool.friendRouter),e.use("/api",errorHandler)};function errorHandler(e,r,o,s){console.error(e.message);var u=e.code||500;o.status(u).send(500===u?"Internal server error":e.message)}
+//# sourceMappingURL=backend.js.map

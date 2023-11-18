@@ -1,0 +1,2 @@
+export default class NewsController{newsRepository;constructor(s){this.newsRepository=s}getAllNews=async(s,t)=>{try{var e=await this.newsRepository.getAllNews();t.status(200).send(JSON.stringify(e))}catch(s){t.status(404).json({error:s.message})}};getNewsByAuthorId=async(s,t)=>{try{var e=parseInt(s.params.id),r=await this.newsRepository.getNewsByAuthorId(e);t.status(200).send(JSON.stringify(r))}catch(s){t.status(404).json({error:s.message})}}}
+//# sourceMappingURL=news.js.map

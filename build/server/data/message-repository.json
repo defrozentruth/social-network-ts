@@ -1,0 +1,72 @@
+[
+  {
+    "sender_id": 1,
+    "receiver_id": 2,
+    "text": "Привет! Как дела?",
+    "timestamp": "2023-03-20T10:30:00Z",
+    "sender_name": "John Doe"
+  },
+  {
+    "sender_id": 2,
+    "receiver_id": 1,
+    "text": "Привет! У меня всё хорошо, спасибо!",
+    "timestamp": "2023-03-20T11:15:00Z",
+    "sender_name":"Alice Smith"
+  },
+  {
+    "sender_id": 3,
+    "receiver_id": 1,
+    "text": "Здравствуйте! Какой план на сегодня?",
+    "timestamp": "2023-03-20T14:45:00Z",
+    "sender_name": "Bob Johnson"
+  },
+  {
+    "sender_id": 1,
+    "receiver_id": 3,
+    "text": "Привет! Сегодня замечательный день!",
+    "timestamp": "2023-03-20T15:20:00Z",
+    "sender_name": "John Doe"
+  },
+  {
+    "sender_id": 4,
+    "receiver_id": 2,
+    "text": "Здравствуйте! У вас есть какие-либо новости?",
+    "timestamp": "2023-03-21T08:30:00Z",
+    "sender_name": "Eve Wilson"
+  },
+  {
+    "sender_id": 2,
+    "receiver_id": 4,
+    "text": "Здравствуйте! Мне нравится ваше мнение.",
+    "timestamp": "2023-03-21T09:10:00Z",
+    "sender_name": "Alice Smith"
+  },
+  {
+    "sender_id": 5,
+    "receiver_id": 3,
+    "text": "Привет! Мы сегодня идем в кино?",
+    "timestamp": "2023-03-22T16:00:00Z",
+    "sender_name": "Charlie Brown"
+  },
+  {
+    "sender_id": 3,
+    "receiver_id": 5,
+    "text": "Привет! Конечно, давай сходить!",
+    "timestamp": "2023-03-22T16:45:00Z",
+    "sender_name": "Bob Johnson"
+  },
+  {
+    "sender_id": 6,
+    "receiver_id": 7,
+    "text": "Привет! Как поживаешь?",
+    "timestamp": "2023-03-23T12:20:00Z",
+    "sender_name": "Grace Davis"
+  },
+  {
+    "sender_id": 7,
+    "receiver_id": 6,
+    "text": "Привет! Я в порядке, спасибо!",
+    "timestamp": "2023-03-23T13:00:00Z",
+    "sender_name": "Michael Clark"
+  }
+]

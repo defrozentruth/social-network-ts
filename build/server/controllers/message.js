@@ -1,0 +1,2 @@
+export default class MessageController{messageRepo;constructor(s){this.messageRepo=s}getMessagesInChat=async(s,a)=>{try{var e=parseInt(s.params.id),t=parseInt(s.params.friend_id),r=await this.messageRepo.getMessagesInChat(e,t);r?a.status(200).json(r):a.status(404).json({error:`Chat between id ${e} and ${t} does not exist`})}catch(s){a.status(404).json({error:s.message})}};getChats=async(s,a)=>{try{var e=parseInt(s.params.id),t=await this.messageRepo.getChats(e);a.status(200).json(t)}catch(s){a.status(500).json({error:s.message})}}}
+//# sourceMappingURL=message.js.map

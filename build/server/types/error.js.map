@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../server/types/error.ts"],"names":["Error","code","message","constructor","this"],"mappings":"MAEMA,MACiBC,KAAqBC,QAAxCC,YAAmBF,EAAqBC,GAArBE,KAAAH,KAAAA,EAAqBG,KAAAF,QAAAA,CAAkB,C,QAHtDF,K","file":"error.js","sourcesContent":["export {Error}\r\n\r\nclass Error{\r\n    constructor(public code: number, public message: string) {}\r\n}"]}
