@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/styles/style.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        title Новости
+    body.pages
+        div.div-panel
+            p.return
+                a(href='/user', style = "color: white").info-panel На главную
+            br
+            p.info-panel #{user.name}: Новости друзей
+        br
+        each news in usersNews
+            div.div-news.div-chat
+                p.info Автор: #{news.author_name}
+                p.info #{news.date}
+                p.text #{news.content}
+            br

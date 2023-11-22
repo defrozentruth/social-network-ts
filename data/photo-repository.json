@@ -1,22 +1,22 @@
 [
   {
     "user_id": 1,
-    "photo": "https://w.forfun.com/fetch/56/5656d35727009cabea6ce79973a9702c.jpeg"
+    "photo": "http://localhost:8080/img/placeholder.jpg"
   },
   {
     "user_id": 2,
-    "photo": "https://w.forfun.com/fetch/da/daf8eb568fea522f6701fb9c66378cdc.jpeg"
+    "photo": "http://localhost:8080/img/placeholder.jpg"
   },
   {
     "user_id": 3,
-    "photo": "https://gas-kvas.com/uploads/posts/2023-02/1675489758_gas-kvas-com-p-izobrazheniya-i-kartinki-na-fonovii-risuno-41.jpg"
+    "photo": "http://localhost:8080/img/placeholder.jpg"
   },
   {
     "user_id": 4,
-    "photo": "https://w.forfun.com/fetch/b4/b4ee94aa20bd9af0dafd3b4d62332c08.jpeg"
+    "photo": "http://localhost:8080/img/placeholder.jpg"
   },
   {
     "user_id": 5,
-    "photo": "https://proprikol.ru/wp-content/uploads/2020/04/krasivye-kartinki-vysokogo-razresheniya-3.jpg"
+    "photo": "http://localhost:8080/img/placeholder.jpg"
   }
 ]

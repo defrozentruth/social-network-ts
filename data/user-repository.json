@@ -52,15 +52,9 @@
   },
   {
     "id": 5,
-    "name": "Сергей Новиков",
-    "email": "sergey.novikov@example.com",
-    "date": "1987-04-30",
+    "name": "pepo",
+    "email": "pepo@example.com",
     "status": "unverified",
-    "role": "admin",
-    "friends": [
-      1,
-      2,
-      4
-    ]
+    "role": "user"
   }
 ]

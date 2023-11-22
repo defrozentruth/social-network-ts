@@ -1,0 +1,22 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/styles/style.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        title Чаты
+    body.pages
+        div.div-panel
+            p.return-news-chat
+                a(href='/user', style = "color: white").info-panel На главную
+            p.info-panel #{user.name}: Сообщения
+        br
+        each chat in usersChats
+            div.div-chat
+                each message in chat
+                    div.div-news
+                        p.info Отправитель: #{message.sender_name}
+                        p.info #{message.timestamp}
+                        p.text #{message.text}
+            br

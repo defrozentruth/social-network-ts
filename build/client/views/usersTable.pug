@@ -1,0 +1,44 @@
+table
+    thead
+        tr.div-panel
+            th.th-info
+                | ID
+            th.th-info
+                | ФИО
+            th.th-info
+                | Почта
+            th.th-info
+                | Дата рождения
+            th.th-info
+                | Роль
+            th.th-info
+                | Статус
+            th.th-click
+                | Друзья
+            th.th-click
+                | Сообщения
+            th.th-click
+                | Новости
+            th.th-click
+                | Изменить
+    tbody
+        each user in users
+            tr.tr-all-users.div-news
+                td.column-info #{user.id}
+                td.column-info #{user.name}
+                td.column-info #{user.email}
+                td.column-info #{user.date}
+                td.column-info #{user.role}
+                td.column-info #{user.status}
+                td.column-click
+                    a(href="/friends/" + user.id, style = "color: #1A72B8")
+                        i.fa.fa-user-circle-o.fa-2x(aria-hidden='true')
+                td.column-click
+                    a(href="/message/" + user.id, style = "color: #1A72B8")
+                        i.fa.fa-comments.fa-2x(aria-hidden='true')
+                td.column-click
+                    a(href="/news/" + user.id, style = "color: #1A72B8")
+                        i.fa.fa-bullhorn.fa-2x(aria-hidden='true')
+                td.column-click
+                    a.btn-with-icon(href='/user/edit/' + user.id, type="button")
+                        i.fa.fa-cog.fa-2x(aria-hidden='true')

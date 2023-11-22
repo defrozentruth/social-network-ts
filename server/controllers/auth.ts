@@ -1,7 +1,7 @@
-import * as argon2 from 'argon2'
 import UserRepository from "../repository/user.js";
 import {User} from "../models/user.js";
 import AuthRepository from "../repository/auth.js";
+import ImageRepository from "~server-src/repository/image";
 import AuthData from "../models/auth.js";
 import e from "express";
 import pkg from 'jsonwebtoken';
@@ -10,15 +10,15 @@ import * as Sentry from "@sentry/node";
 export class AuthController{
     constructor(
        private userRepo: UserRepository,
-       private authRepo: AuthRepository
+       private authRepo: AuthRepository,
+       private imageRepo: ImageRepository
     ) {}
 
     public SignUp = async(req: e.Request, res: e.Response) => {
         try{
             const {email, password, name} = req.body
-            const passwordHashed = await argon2.hash(password)
             const id = await this.userRepo.getCountUsers()+1;
-            const userRecord = await this.authRepo.create(new AuthData(id, email, passwordHashed))
+            const userRecord = await this.authRepo.create(new AuthData(id, email, password))
 
             if(!userRecord){
                 throw new Error(`Error during creating account`)
@@ -30,6 +30,10 @@ export class AuthController{
                 email: userRecord.email,
                 role: "user",
                 status: "unverified"
+            }))
+            const image = await this.imageRepo.create(Image.fromObject({
+                id: userRecord.id,
+                url: "http://localhost:8080/img/placeholder.jpg"
             }))
 
             res.status(200).send(JSON.stringify(user))
@@ -43,7 +47,7 @@ export class AuthController{
         try{
             const {email, password} = req.body
             const userRecord = await this.authRepo.getUserByEmail(email);
-            const correctPassword = await argon2.verify(userRecord.password!, password)
+            const correctPassword = userRecord.password == password;
             if(!correctPassword){
                 throw new Error('Incorrect password')
             }

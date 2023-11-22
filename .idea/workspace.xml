@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="573b45e9-8e8c-4c0e-b497-92181d72e3cb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/controllers/image.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middleware/multer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/middleware/requiredRole.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/image.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/repository/image.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/routers/image.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/socket.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/views/startPage.pug" beforeDir="false" afterPath="$PROJECT_DIR$/client/views/startPage.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/auth-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/auth-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/photo-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/photo-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/user-repository.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/user-repository.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.babel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/controller-pool.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/controller-pool.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/repository/repository-pool.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/repository/repository-pool.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/loaders/backend.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/loaders/backend.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routers/image.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/routers/image.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routers/router-pool.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/routers/router-pool.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <workItem from="1700300961831" duration="222000" />
       <workItem from="1700301206032" duration="2380000" />
       <workItem from="1700303676800" duration="6607000" />
-      <workItem from="1700654607916" duration="668000" />
+      <workItem from="1700654607916" duration="5949000" />
     </task>
     <servers />
   </component>
