@@ -5,6 +5,7 @@ import AuthRepository from "../repository/auth.js";
 import AuthData from "../models/auth.js";
 import e from "express";
 import pkg from 'jsonwebtoken';
+import * as Sentry from "@sentry/node";
 
 export class AuthController{
     constructor(
@@ -33,6 +34,7 @@ export class AuthController{
 
             res.status(200).send(JSON.stringify(user))
         }catch (error: any){
+            Sentry.captureException(error);
             console.log(`Error during login`, error)
         }
     }
@@ -50,6 +52,7 @@ export class AuthController{
                 token: this.generateJWT(userRecord)
             }))
         }catch (error: any){
+            Sentry.captureException(error);
             console.log(`Error during login`, error)
         }
     }
