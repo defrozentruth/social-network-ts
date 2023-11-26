@@ -3,7 +3,6 @@ import e from "express";
 import Image from "../models/image";
 import {getIo} from "../socket";
 import {DEFAULT_URL} from "../adapters/mongo/repo/image";
-import * as Sentry from "@sentry/node";
 
 export default class ImageController{
     constructor(
@@ -16,7 +15,6 @@ export default class ImageController{
             const image = await this.imageRepository.getImageByUserId(id)
             res.status(200).send(JSON.stringify(image))
         }catch (error: any) {
-            Sentry.captureException(error);
             res.status(200).send(JSON.stringify({ image_url: DEFAULT_URL}));
         }
     }
@@ -28,7 +26,6 @@ export default class ImageController{
             getIo().emit('image')
             res.json({ result });
         }catch (error: any) {
-            Sentry.captureException(error);
             res.status(400).json({ error: error.message });
         }
     }
@@ -41,7 +38,6 @@ export default class ImageController{
             getIo().emit('image')
             res.status(200).send(JSON.stringify(image))
         }catch (error: any){
-            Sentry.captureException(error);
             res.status(400).json({ error: error.message });
         }
     }

@@ -1,6 +1,6 @@
 import e from "express";
 import ImageController from "../controllers/image";
-import upload from "../middleware/multer"
+import upload from "../middleware/multer1"
 
 export default class ImageRouter{
     constructor(private readonly controller: ImageController) {}

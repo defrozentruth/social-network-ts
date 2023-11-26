@@ -9,13 +9,14 @@ html(lang="ru")
     body.pages
         div.div-panel
             p.return-news-chat
-                a(href='/user', style = "color: #1A72B8") На главную
-            p.info-panel-news-chat #{user.name}. Сообщения
+                a(href='/user', style = "color: white").info-panel На главную
+            p.info-panel #{user.name}: Сообщения
         br
         each chat in usersChats
-            div.div-news
+            div.div-chat
                 each message in chat
-                    p.info Отправитель: #{message.sender_name}
-                    p.info #{message.timestamp}
-                    p.text #{message.text}
+                    div.div-news
+                        p.info Отправитель: #{message.sender_name}
+                        p.info #{message.timestamp}
+                        p.text #{message.text}
             br

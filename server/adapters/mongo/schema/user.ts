@@ -20,4 +20,4 @@ export interface UserDocument extends Document {
     friends?: number[];
 }
 
-export const UserModel = mongoose.model<UserDocument>('user', userSchema);
+export const UserModel = mongoose.model<UserDocument>('user', userSchema)

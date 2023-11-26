@@ -12,4 +12,4 @@ export interface AuthDocument extends Document {
     password: string,
 }
 
-export const AuthModel = mongoose.model<AuthDocument>('authentication', AuthSchema);
+export const AuthModel = mongoose.model<AuthDocument>('auth', AuthSchema);

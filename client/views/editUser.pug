@@ -11,25 +11,30 @@ html(lang="ru")
         script(src="/scripts/index.js")
     body.pages
         div.div-panel
+            p.return-news-chat
+                a(href='/user', style = "color: white").info-panel На главную
+            p.info-panel #{user.name}: Редактировать профиль
+        br
+        div.div-panel.edit-style
             form#edit-user-form
                 .form-group
                     input.form-control(type="hidden" id="editUserId" name="id" value=user.id)
-                .form-group
-                    label(for="editUserName") ФИО:
+                .form-group ФИО
+                    label(for="editUserName").label-style ФИО:
                     input.form-control(type="text", id="editUserName", name="name", value=user.name, required)
                 .form-group
-                    label(for="editUserBirth") Дата рождения:
+                    label(for="editUserBirth").label-style Дата рождения:
                     input.form-control(type="date", id="editUserBirth", name="date", value=user.date.slice(0, 10), required)
                 .form-group
-                    label(for="editUserEmail") Почта:
+                    label(for="editUserEmail").label-style Почта:
                     input.form-control(type="email", id="editUserEmail", name="email", value=user.email, required)
                 .form-group
-                    label(for="editUserRole") Роль:
+                    label(for="editUserRole").label-style Роль:
                     select.form-control(id="editUserRole" name="role")
                         option(value="user", selected=user.role === 'user') Пользователь
                         option(value="admin", selected=user.role === 'admin') Администратор
                 .form-group
-                    label(for="editUserStatus") Статус:
+                    label(for="editUserStatus").label-style Статус:
                     select.form-control(id="editUserStatus" name="status")
                         option(value="unverified", selected=user.status === 'unverified') Не подтвержден
                         option(value="active", selected=user.status === 'active') Активен

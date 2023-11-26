@@ -6,7 +6,7 @@ import {__public_dir} from "../../../config";
 import path from "path";
 
 
-export const DEFAULT_URL = "http://localhost:8080/img/default.png"
+export const DEFAULT_URL = "http://localhost:8080/img/placeholder.png"
 export default class MongoImageRepository implements ImageRepository{
     async getImageByUserId(user_id: number): Promise<Image>{
         const imageDoc = await ImageModel.findOne({user_id}).exec();

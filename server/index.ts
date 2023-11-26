@@ -14,7 +14,6 @@ import frontend from "./loaders/frontend";
 import cors from 'cors'
 import mongoose from 'mongoose'
 import {initIo} from "./socket";
-import * as Sentry from "@sentry/node";
 
 const server = express();
 
@@ -32,9 +31,6 @@ server.use(express.json());
 server.use(express.urlencoded({extended: false}));
 server.use(cookieParser());
 
-Sentry.init({
-    dsn: 'https://a5cb82cb0325719bfe0c1f4bc61fc785@o4506198583738368.ingest.sentry.io/4506198587408384',
-})
 
 const options = {
     'credentials': true,
@@ -45,10 +41,8 @@ const options = {
 
 server.use(cors(options))
 
-server.use(Sentry.Handlers.requestHandler());
 backend(server);
 frontend(server);
-server.use(Sentry.Handlers.errorHandler());
 
 const privateKey = fs.readFileSync(path.join(__project_dir, 'ssl_keys/example.key'), 'utf-8');
 const certificate = fs.readFileSync(path.join(__project_dir, 'ssl_keys/example.crt'), 'utf8');
@@ -62,7 +56,7 @@ const httpServer = http.createServer(server);
 const httpsServer = https.createServer(credentials, server);
 
 mongoose.connect(
-    'mongodb://127.0.0.1:27017/lab3').then(
+    'mongodb://localhost:27017/SN_SATA').then(
     ()=> console.log(`Connected to database`)
 )
 

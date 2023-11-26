@@ -33,6 +33,11 @@ function pug(){
         .pipe(gulp.dest('build/client/views'))
 }
 
+function  img(){
+    return gulp.src('img/*')
+        .pipe('build/img')
+}
+
 function ssl(){
     return gulp.src('server/ssl_keys/*')
         .pipe(gulp.dest('build/server/ssl_keys'))

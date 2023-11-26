@@ -2,7 +2,6 @@ import MessageRepository from "../repository/message";
 import e from "express";
 import {getIo} from "../socket";
 import Message from "../models/message";
-import * as Sentry from "@sentry/node";
 
 export default class MessageController {
     constructor(private messageRepo: MessageRepository) {}
@@ -20,7 +19,6 @@ export default class MessageController {
                 res.status(200).json(messages);
             }
         } catch (error: any) {
-            Sentry.captureException(error);
             res.status(404).json({ error: error.message });
         }
     }
@@ -33,7 +31,6 @@ export default class MessageController {
 
             res.status(200).json(chats);
         } catch (error: any) {
-            Sentry.captureException(error);
             res.status(500).json({ error: error.message });
         }
     }
@@ -44,9 +41,8 @@ export default class MessageController {
             message.sender_id = parseInt(req.params["id"])
             message.receiver_id = parseInt(req.params["friendId"])
             const createdMessage = await this.messageRepo.create(message)
-            getIo().emit('message', JSON.stringify(createdMessage))
+            getIo().emit('message', <any>JSON.stringify(createdMessage))
         }catch (e: any) {
-            Sentry.captureException(e);
             res.status(400).json({error: e.message})
         }
     }

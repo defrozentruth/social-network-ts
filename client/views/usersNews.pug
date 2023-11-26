@@ -9,12 +9,13 @@ html(lang="ru")
         title Новости
     body.pages
         div.div-panel
-            p.return-news-chat
-                a(href='/user', style = "color: #1A72B8") На главную
-            p.info-panel-news-chat #{user.name}. Новости друзей
+            p.return
+                a(href='/user', style = "color: white").info-panel На главную
+            br
+            p.info-panel #{user.name}: Новости друзей
         br
         each news in usersNews
-            div.div-news
+            div.div-news.div-chat
                 p.info Автор: #{news.author_name}
                 p.info #{news.date}
                 p.text #{news.content}

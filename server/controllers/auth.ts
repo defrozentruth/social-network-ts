@@ -1,11 +1,9 @@
-import * as argon2 from 'argon2'
 import UserRepository from "../repository/user";
 import {User} from "../models/user";
 import AuthRepository from "../repository/auth";
 import AuthData from "../models/auth";
 import e from "express";
 import pkg from 'jsonwebtoken';
-import * as Sentry from "@sentry/node";
 
 export class AuthController{
     constructor(
@@ -16,10 +14,8 @@ export class AuthController{
     public SignUp = async(req: e.Request, res: e.Response) => {
         try{
             const {email, password, name} = req.body
-            const passwordHashed = await argon2.hash(password)
             const id = await this.userRepo.getCountUsers()+1;
-            const userRecord = await this.authRepo.create(new AuthData(id, email, passwordHashed))
-
+            const userRecord = await this.authRepo.create(new AuthData(id, email, password))
             if(!userRecord){
                 throw new Error(`Error during creating account`)
             }
@@ -34,7 +30,6 @@ export class AuthController{
 
             res.status(200).send(JSON.stringify(user))
         }catch (error: any){
-            Sentry.captureException(error);
             console.log(`Error during login`, error)
         }
     }
@@ -43,7 +38,7 @@ export class AuthController{
         try{
             const {email, password} = req.body
             const userRecord = await this.authRepo.getUserByEmail(email);
-            const correctPassword = await argon2.verify(userRecord.password, password)
+            const correctPassword = password == userRecord.password;
             if(!correctPassword){
                 throw new Error('Incorrect password')
             }
@@ -52,7 +47,6 @@ export class AuthController{
                 token: this.generateJWT(userRecord)
             }))
         }catch (error: any){
-            Sentry.captureException(error);
             console.log(`Error during login`, error)
         }
     }

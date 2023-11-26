@@ -80,6 +80,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-ts-alias": "^2.0.0",
+    "mongodb": "^6.3.0",
     "node-polyfill-webpack-plugin": "^2.0.1",
     "tsc-alias": "^1.8.8",
     "validator": "^13.11.0",
